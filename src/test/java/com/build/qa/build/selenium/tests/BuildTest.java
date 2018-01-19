@@ -7,6 +7,7 @@ import com.build.qa.build.selenium.pageobjects.homepage.HomePage;
 
 public class BuildTest extends BaseFramework { 
 	
+
 	/** 
 	 * Extremely basic test that outlines some basic
 	 * functionality and page objects as well as assertJ
@@ -29,6 +30,14 @@ public class BuildTest extends BaseFramework {
 	@Test
 	public void searchForProductLandsOnCorrectProduct() { 
 		// TODO: Implement this test
+		navigateToHomePage();
+		String searchText = "Quoizel MY1613";
+
+		homePage.searchForProduct(searchText);
+		
+		softly.assertThat(homePage.checkPageByProductTitle(searchText))
+		.as("Product Page we land on is expected as searched text")
+		.isTrue();
 	}
 	
 	/** 
