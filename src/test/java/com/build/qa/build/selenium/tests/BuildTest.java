@@ -17,6 +17,7 @@ public class BuildTest extends BaseFramework {
 	ShoppingCartPage shoppingcart;
 	
 	
+
 	/** 
 	 * Extremely basic test that outlines some basic
 	 * functionality and page objects as well as assertJ
@@ -40,7 +41,8 @@ public class BuildTest extends BaseFramework {
 	@Test
 	public void searchForProductLandsOnCorrectProduct() throws InterruptedException { 
 		// TODO: Implement this test
-		driver.get(getConfiguration("HOMEPAGE"));
+		// navigate to Build.com
+                driver.get(getConfiguration("HOMEPAGE"));
 		HomePage homePage = new HomePage(driver, wait);
 		
 		// close email newsletter popup if displays upon first launch of bathroom sinks page
@@ -56,7 +58,7 @@ public class BuildTest extends BaseFramework {
 		.as("The product page landed on is verified as product heading contains exptected title: Quoizel MY1613")
 		.isTrue();
 				
-			}
+		}
 	
 	/** 
 	 * Go to the Bathroom Sinks category directly (https://www.build.com/bathroom-sinks/c108504) 
