@@ -1,10 +1,10 @@
-package com.build.qa.build.selenium.pageobjects;
+package com.shootproof.qa.build.selenium.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 
-import com.build.qa.build.selenium.framework.BaseFramework;
+import com.shootproof.qa.build.selenium.framework.BaseFramework;
 
 public abstract class BasePage extends BaseFramework {
 	

@@ -1,4 +1,4 @@
-package com.build.qa.build.selenium.framework;
+package com.shootproof.qa.build.selenium.framework;
 
 import java.io.File;
 import java.io.FileInputStream;
